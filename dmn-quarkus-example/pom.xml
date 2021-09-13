@@ -20,7 +20,10 @@
       </dependency>
     </dependencies>
   </dependencyManagement>
-  <dependencies>
+  <dependencies> <dependency>
+    <groupId>org.kie.kogito</groupId>
+    <artifactId>monitoring-prometheus-quarkus-addon</artifactId>
+  </dependency>
     <dependency>
       <groupId>org.kie.kogito</groupId>
       <artifactId>kogito-quarkus-decisions</artifactId>

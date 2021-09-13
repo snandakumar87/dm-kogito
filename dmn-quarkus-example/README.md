@@ -132,3 +132,7 @@ Example response:
 ## Deploying with Kogito Operator
 
 In the [`operator`](operator) directory you'll find the custom resources needed to deploy this example on OpenShift with the [Kogito Operator](https://docs.jboss.org/kogito/release/latest/html_single/#chap_kogito-deploying-on-openshift).
+
+
+oc start-build dmn-quarkus-example-binary --from-dir=/home/sadhana/demos/kogito/kogito-examples/dmn-drools-quarkus-metrics/target -n cloud-enablement-demo
+oc start-build dmn-quarkus-example-local-builder --from-file=/home/sadhana/demos/kogito/kogito-examples/dmn-quarkus-example/src/main/resources/TrafficViolation.dmn -n one
